@@ -1,0 +1,173 @@
+body{
+  background: white;
+  color:black;
+
+  }
+*{
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: sans-serif;
+  }
+
+ /* Top Menu ****************************************/ 
+.top-menu {
+  display: grid;
+  grid-template:
+  "logo top-menu-a top-menu-b" auto/
+   230px 480px 520px;
+  width: 1230px;
+
+  padding-top:2ch;
+  padding-bottom:1ch;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  }
+.top-menu-a{
+  grid-area: top-menu-a;
+  }
+
+.top-menu li{
+  display: inline-block;
+  font-weight: bold;
+  padding: 1ch;
+
+}
+.logo{
+  grid-area: logo;
+  width: 160px;
+}
+.sign-up-menu{
+  border: 1px solid #518df5;
+  color:#518df5;
+  padding:1ch;
+  border-radius: 4px;
+}
+
+/* Hero Section ***************************************/
+.hero-image{
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/Hero-Image.jpg");*/
+  background-image: url("assets/Hero-Image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 494px;
+  align-items:center;
+}
+.hero-grid{
+  display: grid;
+  grid-template: 
+  ". ." 7ch
+  "hero-text hero-sign-up" 1fr /
+  1fr 1fr;
+  color:black;
+  margin-top:auto;
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  text-justify: left;
+  align-items: left;
+  justify-self: left;
+}
+.hero-text{
+  grid-area: hero-text;
+  text-justify: left;
+  align-items: left;
+  justify-self: left;
+}
+.hero-sign-up{
+  grid-area: hero-sign-up;
+  background-color: white;
+  border-radius: 5px;
+  width:458px;
+  height: 367px;
+  padding-top: 4ch;
+  margin-left: 4ch;
+}
+.hero-text h1{
+  font-size: 4rem;
+  color: white;
+  text-justify: left;
+  align-items: left;
+  justify-self: left;
+}
+.hero-text p{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: lightgrey;
+  text-justify: left;
+  align-items: left;
+  justify-self: left;
+  line-height: 26pt;
+}
+.black-text{
+  color: black;
+  font-size: 1.6rem;
+  font-weight:bold;
+}
+.blue-text{
+  color: #2672ff;
+  font-size:1.6rem;
+  display:block;
+  font-weight:bold;
+  padding-top: 0.8ch;
+}
+.hero-sign-up input{
+  width:60ch;
+  height:5ch;
+  margin:1ch;
+  border-radius: 4px;
+  border: 1px solid rgb(233, 232, 232);
+
+}
+.hero-sign-up input::placeholder{
+  text-align: left;
+  margin-left: 1ch;
+  font-size: 1.05rem;
+}
+.hero-sign-up .white-button{
+  width:60ch;
+  height:5ch;
+  margin:1ch;
+  border-radius: 4px;
+  border: 1px solid rgb(233, 232, 232);
+  background-color: white;
+  box-shadow: 1px 1px 2px rgb(218, 218, 218);
+  font-weight: bold;
+}
+.hero-sign-up .blue-button{
+  width:60ch;
+  height:5ch;
+  margin:1ch;
+  border: 1px solid #5993ff;
+  background-color:#5993ff;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.terms{
+  padding-top:0.5rem;
+  font-size: 0.69rem;
+  font-weight: bold;
+}
+.TOC{
+  font-weight: bold;
+  color:#2672ff;
+  text-decoration: underline;
+  font-size: 0.69rem;
+}
+.google-icon{
+  width: 20px;
+  display: inline-grid;
+  margin-right: 15ch;
+  margin-left: -18ch;
+  margin-bottom: -5px;
+}
+.google-button-text{
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+}
