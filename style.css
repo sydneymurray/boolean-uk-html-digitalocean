@@ -11,7 +11,7 @@ body{
   font-family: sans-serif;
   }
 
-  
+
  /* TOP MENU ****************************************/ 
 .top-menu {
   display: grid;
@@ -70,16 +70,10 @@ body{
   width: 1230px;
   margin-left: auto;
   margin-right: auto;
-  text-justify: left;
-  align-items: left;
-  justify-self: left;
 }
 .hero-text{
   grid-area: hero-text;
-  text-justify: left;
-  align-items: left;
-  justify-self: left;
-}
+ }
 .hero-sign-up{
   grid-area: hero-sign-up;
   background-color: white;
@@ -92,17 +86,13 @@ body{
 .hero-text h1{
   font-size: 4rem;
   color: white;
-  text-justify: left;
-  align-items: left;
-  justify-self: left;
+  text-align: left;
 }
 .hero-text p{
   font-weight: bold;
   font-size: 1.2rem;
+  text-align: left;
   color: lightgrey;
-  text-justify: left;
-  align-items: left;
-  justify-self: left;
   line-height: 26pt;
 }
 .black-text{
@@ -226,4 +216,46 @@ body{
 
 
 /* PARTNER SECTION ***************************************/
+
+.partner-section{
+  display: grid;
+  grid-template: 
+  "partner-heading" auto 
+  "partner-links" auto
+  "testimonies" auto/
+  auto;
+  background-color: #ececf5;
+}
+.partner-section h1{
+  grid-area: partner-heading;
+  font-size: 1rem;
+  margin-top:3rem;
+  margin-bottom:4ch;
+  color: #6d7792;
+}
+.partner-links{
+  grid-area: partner-links;
+}
+.partner-links li{
+  display: inline-block;
+}
+.partner-links li img{
+  height: 90px;
+}
+.partner-links li .splunk-logo{
+  height: 60px;
+  margin-top: -2ch;
+  padding-bottom: 2.5ch;
+}
+.partner-section p{
+  grid-area: testimonies;
+  margin-top: 3.5ch;
+  margin-bottom: 4ch;
+  font-weight: bold;
+  color: #2672ff;
+}
+
+
+/* DEPLOY SEWCTION **************************************/
+
 
