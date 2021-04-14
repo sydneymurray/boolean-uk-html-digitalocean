@@ -11,6 +11,7 @@ body{
   font-family: sans-serif;
   }
 
+  
  /* TOP MENU ****************************************/ 
 .top-menu {
   display: grid;
@@ -45,6 +46,7 @@ body{
   padding:1ch;
   border-radius: 4px;
 }
+
 
 /* HERO SECTION ***************************************/
 .hero-image{
@@ -172,4 +174,56 @@ body{
 
 }
 
+/* RESPONSIVENESS */
+@media screen and (max-width: 1110px) {
+  .hero-image{
+        height: 750px;
+  }
+  .hero-grid{
+    display: grid;
+    grid-template: 
+    "hero-text" auto 
+    "hero-sign-up" auto/
+    1fr;
+    margin-top:auto;
+    width: 800px;
+  }
+  .hero-sign-up{
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .hero-text{
+    height:350px;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .hero-image{
+        height: auto;
+  }
+  .hero-grid{
+    display: grid;
+    grid-template: 
+    "hero-text" auto
+    "hero-sign-up" auto/
+    auto;
+    margin-top:auto;
+    width: auto;
+  }
+  .hero-sign-up{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom:5ch;
+  }
+  .hero-text{
+    height:auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
 /* PARTNER SECTION ***************************************/
+
