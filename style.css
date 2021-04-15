@@ -91,7 +91,7 @@ body{
 .hero-text p{
   font-weight: bold;
   font-size: 1.2rem;
-  text-align: left;
+  text-align: justify;
   color: lightgrey;
   line-height: 26pt;
 }
@@ -322,34 +322,18 @@ body{
   color: rgb(101, 111, 134);
 }
 .deploy .category{
-  justify-content: left;
-  justify-items: left;
   text-align: left;
-  align-content: left;
-  align-items: left;
-  text-justify: left;
 }
 .deploy .category h2{
   font-size: 1.2rem;
   margin-top: 0.5ch;
   margin-bottom: 0.5ch;
-  justify-content: left;
-  justify-items: left;
   text-align: left;
-  align-content: left;
-  align-items: left;
-  text-justify: left;
 }
 .deploy .category p{
   font-size: 1.1rem;
   padding-right: 5ch;
   text-align: justify;
-  justify-content: left;
-  justify-items: left;
-  text-align: left;
-  align-content: left;
-  align-items: left;
-  text-justify: left;
 }
 
 /* RESPONSIVENESS */
