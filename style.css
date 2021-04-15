@@ -249,13 +249,113 @@ body{
 }
 .partner-section p{
   grid-area: testimonies;
-  margin-top: 3.5ch;
-  margin-bottom: 4ch;
+  margin-top: 2ch;
+  margin-bottom: 6ch;
   font-weight: bold;
   color: #2672ff;
 }
 
 
-/* DEPLOY SEWCTION **************************************/
+/* DEPLOY SECTION **************************************/
 
+.deploy{
+  display: grid;
+  grid-template:
+  "title-heading title-heading title-heading" auto
+  "introduction introduction introduction" auto
+  "side-menu cluster compute" auto
+  "side-menu one-click availability" auto/
+  auto auto auto;
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 3ch
+}
+.side-menu{
+  grid-area: side-menu;
+  color: rgb(101, 111, 134);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.side-menu li{
+  padding-bottom:1.5rem;
+  text-align: left;
+  list-style: none;
+  margin-left: 6ch;
+  margin-right: 3ch;
+  border-left: 2px solid lightgrey;
+  padding-left: 2ch;
+}
+.side-menu li .blue{
+  border-left: 2px solid #2672ff;
+}
+.deploy h1{
+  grid-area: title-heading;
+  margin-top: 6ch;
+  margin-bottom: 1ch;
+  font-size: 2.1rem;
+}
+.deploy p{
+  grid-area: introduction;
+  color: rgb(101, 111, 134);
+  font-size: 1.5rem;
+  margin-bottom: 4ch;
+}
+.cluster{
+  grid-area: cluster;
+}
+.compute{
+  grid-area: compute;
+}
+.one-click{
+  grid-area: one-click;
+}
+.availability{
+  grid-area: availability;
+}
+.side-menu li a:link{
+  text-decoration: none;
+  color: rgb(101, 111, 134);
+}
+.side-menu li a:visited{
+  text-decoration: none;
+  color: rgb(101, 111, 134);
+}
+.deploy .category{
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  align-content: left;
+  align-items: left;
+  text-justify: left;
+}
+.deploy .category h2{
+  font-size: 1.2rem;
+  margin-top: 0.5ch;
+  margin-bottom: 0.5ch;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  align-content: left;
+  align-items: left;
+  text-justify: left;
+}
+.deploy .category p{
+  font-size: 1.1rem;
+  padding-right: 5ch;
+  text-align: justify;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  align-content: left;
+  align-items: left;
+  text-justify: left;
+}
 
+/* RESPONSIVENESS */
+@media screen and (max-width: 630px) {
+  .side-menu{
+    display: none;
+  }
+    
+}
